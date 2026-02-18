@@ -1,0 +1,232 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  padding: 20px;
+}
+
+/* ========== APP CONTAINER ========== */
+.app {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+header p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  background: #238636;
+  color: white;
+}
+
+/* ========== GRID LAYOUT ========== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== SECTION BOXES ========== */
+section {
+  background: #161b22;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.05);
+  margin-bottom: 16px;
+}
+
+section h2 {
+  font-size: 18px;
+  color: #79c0ff;
+  margin-bottom: 12px;
+}
+
+/* ========== INPUT STYLING ========== */
+label {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+input:focus,
+select:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
+
+/* ========== BUTTONS ========== */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #238636;
+  border: none;
+  border-radius: 6px;
+  margin-top: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+button.danger {
+  background: #da3633;
+}
+
+button.danger:hover {
+  background: #f85149;
+}
+
+button.secondary {
+  background: #30363d;
+}
+
+button.secondary:hover {
+  background: #484f58;
+}
+
+/* ========== TABLE STYLING ========== */
+table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #30363d;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #21262d;
+  color: #79c0ff;
+}
+
+td {
+  background: #161b22;
+}
+
+/* ========== STATUS BADGES ========== */
+.status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.status.green {
+  background: #238636;
+}
+
+.status.red {
+  background: #da3633;
+}
+
+.status.orange {
+  background: #f0883e;
+}
+
+/* ========== CHART WRAPPER ========== */
+.chart-box {
+  margin-top: 12px;
+  background: #0d1117;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+}
+
+/* ========== PDF BUTTON ========== */
+.pdf-btn {
+  background: #8250df;
+}
+
+.pdf-btn:hover {
+  background: #9155f6;
+}
+
+/* ========== TEXT SMALLER ========== */
+small {
+  opacity: 0.7;
+  font-size: 12px;
+}
+/* Highlight low stock quantities */
+.danger {
+  color: #ff4b4b !important;
+  font-weight: 700 !important;
+}
+.chart-container {
+  margin-top: 10px;
+  padding: 8px;
+  background: #020617;
+  border-radius: 12px;
+  border: 1px solid #111827;
+}
+/* Vitals status colour coding */
+.NORMAL {
+  color: #4ade80 !important;  /* green */
+  font-weight: 700;
+}
+
+.HIGH {
+  color: #f97373 !important;  /* red */
+  font-weight: 700;
+}
+
+.LOW {
+  color: #60a5fa !important;  /* blue */
+  font-weight: 700;
+}
+
+.NA {
+  color: #9ca3af !important;  /* grey */
+  font-weight: 600;
+}
